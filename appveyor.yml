@@ -13,7 +13,6 @@ install:
     - vcpkg install
           opengl freeglut
           --triplet %PLATFORM%-windows
-           devil
 
 before_build:
     - md build
