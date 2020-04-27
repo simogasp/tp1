@@ -16,6 +16,10 @@ message(STATUS "GLUT_FOUND: ${GLUT_FOUND}")
 message(STATUS "GLUT_INCLUDE_DIR: ${GLUT_INCLUDE_DIR}")
 message(STATUS "GLUT_LIBRARIES: ${GLUT_LIBRARIES}")
 
+if(APPLE)
+  add_definitions(-Wno-deprecated-declarations)
+endif()  
+
 add_executable(helloteapot helloteapot.cpp)
 target_include_directories(helloteapot PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
 target_link_libraries(helloteapot PUBLIC ${OPENGL_opengl_LIBRARY} ${OPENGL_glu_LIBRARY} ${GLUT_LIBRARIES})
