@@ -27,4 +27,4 @@ build:
   parallel: true
 
 cache:
-#  - c:\tools\vcpkg\installed\
+  - c:\tools\vcpkg\installed\
