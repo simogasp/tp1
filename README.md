@@ -129,7 +129,7 @@ Edit the code as required and then
 > the cmake line has to be run only **once**
 
 
-## OsX
+## macOS
 
 ### Prerequisites
 
