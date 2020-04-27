@@ -11,8 +11,8 @@ configuration:
 install:
     - vcpkg upgrade --no-dry-run
     - vcpkg install
-          opengl freeglut
-          --triplet %PLATFORM%-windows
+          opengl
+      --triplet %PLATFORM%-windows
 
 before_build:
     - md build
