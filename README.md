@@ -48,9 +48,9 @@ This step enables you to create the project file to load inside VS:
 
 Edit the code according to the assignments that are given, rebuild the solution and execute. 
 
-> You need to run the cmake line only **once**
+> !!! You need to run the cmake line only **once**
 
-> You need to copy the dll file only **once**.
+> !!! You need to copy the dll file only **once**.
 
 
 ## Linux
