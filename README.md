@@ -1,5 +1,13 @@
 # Introduction to OpenGL
 
+- Building
+  * [Windows](#windows)
+  * [Linux](#linux)
+  * [MacOs](#macos)
+- [Navigator](#adding-navigator.cpp)
+
+---
+
 ## Windows
 
 ### Prerequisites
@@ -52,6 +60,7 @@ Edit the code according to the assignments that are given, rebuild the solution 
 
 > !!! You need to copy the dll file only **once**.
 
+---
 
 ## Linux
 
@@ -116,6 +125,7 @@ make  <name_file_without_cpp>
 
 > !!! the cmake line has to be run only **once**
 
+---
 
 ## macOS
 
@@ -134,7 +144,8 @@ If you want to use CMake, follow the instructions for linux to install the lates
  
  Same as Linux.
  
- 
+---
+
 ## Adding navigator.cpp
  
  * Create a new file named navigator.cpp
