@@ -31,15 +31,17 @@ This step enables you to create the project file to load inside VS:
 * if everything went well you should find a file named `tp1.sln` inside the directory.
 
 
-### Compile, build, execute
+### Compile, build, execute 
 
 * open `tp1.sln` inside VS either by double clicking on it or opening from inside VS
 
-* build the solution
+* build the solution (**Build Solution** from the **Build menu**)
 
 * from the tp directory copy `freeglut\bin\x64\freeglut.dll` in `build\Release`
 
-* execute the code.
+* execute the code.  (On the menu bar, choose **Debug**, **Start without debugging**.)
+
+(see https://docs.microsoft.com/en-us/cpp/build/vscpp-step-2-build?view=vs-2019 for how to build, execute, etc)
 
 
 ### Editing the code
@@ -77,9 +79,8 @@ To build this code you can either
     ```bash
     wget https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
     chmod +x cmake-3.17.1-Linux-x86_64.sh
-    sudo cmake-3.17.1-Linux-x86_64.s --prefix=/usr/local/ --skip-license
+    sudo cmake-3.17.1-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
     ```
-  
   
  ### Build
  
@@ -91,11 +92,11 @@ To build this code you can either
    ```
    
  * using CMake:
- ```bash
- mkdir build && cd build
- cmake ..
- make <name_file_without_cpp>
- ```
+     ```bash
+     mkdir build && cd build
+     cmake ..
+     make <name_file_without_cpp>
+     ```
 
  In both cases,
  ```bash
@@ -144,3 +145,19 @@ If you want to use CMake, follow the instructions for linux to install the lates
 ### Editing the code
  
  Same as Linux.
+ 
+ 
+ ## Adding navigator.cpp
+ 
+ * Create a new file named navigator.cpp
+ 
+ * [Windows only] close VS
+ 
+ * Edit `CMakeLists.txt` and uncomment (remove the `#` at the beginning) the last 3 lines
+ 
+ * in the terminal, from the `build` directory run `cmake ..`
+ 
+ * [Windows only] reload the solution file, now a new `navigator` target should appear. Build/execute as usual
+ 
+ * [other os] build and execute as usual, i.e. `make navigator`, `./navigator` ...
+ 

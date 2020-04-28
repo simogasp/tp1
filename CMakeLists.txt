@@ -28,6 +28,7 @@ add_executable(moreteapots moreteapots.cpp)
 target_include_directories(moreteapots PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
 target_link_libraries(moreteapots PUBLIC ${OPENGL_opengl_LIBRARY} ${OPENGL_glu_LIBRARY} ${GLUT_LIBRARIES})
 
+# Uncomment the following lines (remove the #) to add the navigator to the build system (after having added the navigator.cpp)
 #add_executable(navigator navigator.cpp)
 #target_include_directories(navigator PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
 #target_link_libraries(navigator PUBLIC ${OPENGL_opengl_LIBRARY} ${OPENGL_glu_LIBRARY} ${GLUT_LIBRARIES})
