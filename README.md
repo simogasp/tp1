@@ -153,9 +153,9 @@ In order to develop with OpenGL check if
 ls  /System/Library/Frameworks/
 ```
 contains OpenGL and GLUT frameworks.
-If not you need to install Xcode  from the `Mac App Store`, see here for more details https://developer.apple.com/support/xcode/
+If not you need to install XCode  from the `Mac App Store`, see here for more details https://developer.apple.com/support/xcode/
 
-If you want to use CMake, follow the instructions for linux to install the latest version
+Install the latest version of CMake by downloading https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Darwin-x86_64.dmg
 
 ### Build
  
