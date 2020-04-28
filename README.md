@@ -39,7 +39,7 @@ This step enables you to create the project file to load inside VS:
 
 * from the tp directory copy `freeglut\bin\x64\freeglut.dll` in `build\Release`
 
-* execute the code.  (On the menu bar, choose **Debug**, **Start without debugging**.)
+* execute the code.  (On the menu bar, choose **Debug** --> **Start without debugging**.)
 
 (see https://docs.microsoft.com/en-us/cpp/build/vscpp-step-2-build?view=vs-2019 for how to build, execute, etc)
 
@@ -59,56 +59,49 @@ Edit the code according to the assignments that are given, rebuild the solution 
 
 In order to develop with OpenGL some system packages are required:
 
-```bash
+```
 sudo apt-get install libglu1-mesa-dev freeglut3-dev mesa-common-dev libxi-dev libxmu-devautomake
 ```
 
-To build this code you can either 
+To build this code we use the CMake build system. You can install CMake from the system package manager but you need a recent version >= 3.10. Check the version that is provided by your linux distribution and if it is suitable usually you need to
 
-* use the provided `Makefile`
-
-* or the CMake build system. You can install CMake from the system package manager but you need a recent version >= 3.10. Check the version that is provided by your linux distribution and if it is suitable usually you need to
-
-    ```bash
+    ```
     sudo apt-get install cmake
     ```
 
     otherwise you can install the binaries from here: https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
     
     To install:
-    ```bash
+    ```
     wget https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
     chmod +x cmake-3.17.1-Linux-x86_64.sh
     sudo cmake-3.17.1-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
     ```
   
- ### Build
+### Build
  
- To compile and build the code you can either:
- 
- * using the Makefile, just:
-   ```bash
-   make <name_file_without_cpp>
-   ```
-   
- * using CMake:
-     ```bash
-     mkdir build && cd build
-     cmake ..
-     make <name_file_without_cpp>
-     ```
+To compile and build the code you can 
 
- In both cases,
- ```bash
+ ```
+ mkdir build && cd build
+ cmake ..
+ make <name_file_without_cpp>
+ ```
+
+Also,
+
+```
 make all
 ```
 builds everything, and
- ```bash
+
+```
 make clean
 ```
 cleans everything.
 
 Execute the code:
+
 ```
 ./helloteapot
 ```
@@ -117,17 +110,11 @@ Execute the code:
 
 Edit the code as required and then
 
-* using `Makefile` 
-  ```
-  make clean && make <name_file_without_cpp>
-  ```
+```
+make  <name_file_without_cpp>
+```
 
-* CMake:
-  ```
-  make  <name_file_without_cpp>
-  ```
-
-> the cmake line has to be run only **once**
+> !!! the cmake line has to be run only **once**
 
 
 ## macOS
@@ -135,10 +122,11 @@ Edit the code as required and then
 ### Prerequisites
 
 In order to develop with OpenGL you need to have XCode installed.
+You can install it from the `Mac App Store`, see here for more details https://developer.apple.com/support/xcode/
 
 If you want to use CMake, follow the instructions for linux to install the latest version
 
- ### Build
+### Build
  
  Same as Linux.
  
@@ -147,7 +135,7 @@ If you want to use CMake, follow the instructions for linux to install the lates
  Same as Linux.
  
  
- ## Adding navigator.cpp
+## Adding navigator.cpp
  
  * Create a new file named navigator.cpp
  
