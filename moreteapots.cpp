@@ -20,34 +20,48 @@
 #include <iostream>
 using namespace std;
 
-void display () 
+void display ()
 {
 
     /* clear window */
     glClear(GL_COLOR_BUFFER_BIT);
 
-    glMatrixMode(GL_MODELVIEW);         // set current matrix as GL_MODELVIEW
+    // set current matrix as GL_MODELVIEW
+    glMatrixMode(GL_MODELVIEW);
 
-    // draw scene 
-    glPushMatrix();                 // add a copy of the curr. matrix to the stack
+    // draw scene
 
-			glPushMatrix();                 // add a copy of the curr. matrix to the stack
-				
-				glTranslatef(0, 0, -3);             // translate -3 on the z
-				glColor3f(1.0f, 0.0f, 0.0f);        // set drawing color to red
-				glutWireTeapot( 1 );                // middle red teapot
-				glTranslatef(0, 2, 0);              // translate 2 on the y
-				glColor3f(0.0f, 1.0f, 0.0f);        // set drawing color to blue
-				glRotatef(90, 1.0f, 0.0f, 0.0f);    // rotate 90 deg around x
-				glutWireTeapot( 1 );                // top green teapot
-			glPopMatrix();                      // pop the current matrix
+    // add a copy of the curr. matrix to the stack
+    glPushMatrix();
 
-		glTranslatef(0, -2, -1);            // translate -2 on y and -1 on z
-		glColor3f(0.0f, 0.0f, 1.0f);        // set drawing color to blue
-		glutWireTeapot( 1 );                // bottom blue teapot
+        glPushMatrix();
+            // translate by -3 on the z
+            glTranslatef(0, 0, -3);
+            // set drawing color to red
+            glColor3f(1.0f, 0.0f, 0.0f);
+            // middle red teapot
+            glutWireTeapot( 1 );
+            // translate by 2 on the y
+            glTranslatef(0, 2, 0);
+            // set drawing color to blue
+            glColor3f(0.0f, 1.0f, 0.0f);
+            // rotate 90 deg around x
+            glRotatef(90, 1.0f, 0.0f, 0.0f);
+            // top green teapot
+            glutWireTeapot( 1 );
+        // pop the current matrix
+        glPopMatrix();
 
-    glPopMatrix();                      // pop the current matrix
-    
+        // translate -2 on y and -1 on z
+        glTranslatef(0, -2, -1);
+        // set drawing color to blue
+        glColor3f(0.0f, 0.0f, 1.0f);
+        // bottom blue teapot
+        glutWireTeapot( 1 );
+
+    // pop the current matrix
+    glPopMatrix();
+
     /* flush drawing routines to the window */
     glFlush();
 
@@ -68,7 +82,7 @@ void key( unsigned char key, int x, int y )
     glutPostRedisplay( );
 }
 
-void reshape ( int width, int height ) 
+void reshape ( int width, int height )
 {
 
     /* define the viewport transformation */
@@ -76,7 +90,7 @@ void reshape ( int width, int height )
 
 }
 
-int main ( int argc, char * argv[] ) 
+int main ( int argc, char * argv[] )
 {
 
     /* initialize GLUT, using any commandline parameters passed to the 
