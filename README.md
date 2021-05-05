@@ -4,7 +4,7 @@
   * [Windows](#windows)
   * [Linux](#linux)
   * [MacOs](#macos)
-- [Navigator](#adding-navigator.cpp)
+- [Adding new files](#Adding-new-files-to-the-build-systems)
 
 ---
 
