@@ -88,20 +88,20 @@ In order to develop with OpenGL some system packages are required (unless you ar
 sudo apt-get install libglu1-mesa-dev freeglut3-dev build-essential mesa-common-dev libxi-dev libxmu-dev automake
 ```
 
-To build this code we use the CMake build system. You can install CMake from the system package manager but you need a recent version >= 3.10. Check the version that is provided by your linux distribution and if it is suitable usually you need to
+To build this code we use the CMake build system. You can install CMake from the system package manager but you need a recent version >= 3.10. Check the version that is provided by your linux distribution and if it is suitable usually you need to 
 
-    ```
-    sudo apt-get install cmake
-    ```
+```
+sudo apt-get install cmake
+```
 
-    otherwise you can install the binaries from here: https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
-    
-    To install:
-    ```
-    wget https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
-    chmod +x cmake-3.17.1-Linux-x86_64.sh
-    sudo cmake-3.17.1-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
-    ```
+otherwise you can install the binaries from here: https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
+
+To install:
+```
+wget https://github.com/Kitware/CMake/releases/download/v3.17.1/cmake-3.17.1-Linux-x86_64.sh
+chmod +x cmake-3.17.1-Linux-x86_64.sh
+sudo cmake-3.17.1-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
+```
   
 ### Build
  
