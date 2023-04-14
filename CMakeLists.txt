@@ -39,6 +39,7 @@ endif()
 # target_include_directories(helloteapot2 PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
 # # target_link_libraries(helloteapot2 PUBLIC ${OPENGL_opengl_LIBRARY} ${OPENGL_glu_LIBRARY} ${GLUT_LIBRARIES})
 # target_link_libraries(helloteapot2 PUBLIC OpenGL::GL OpenGL::GLU ${GLUT_LIBRARIES})
+# target_compile_options(helloteapot2 PRIVATE ${MY_COMPILE_OPTIONS})
 
 add_executable(moreteapots moreteapots.cpp)
 target_include_directories(moreteapots PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})
