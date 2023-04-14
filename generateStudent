@@ -14,7 +14,7 @@ TMPDIR=/tmp
 DESTNAME=${TMPDIR}/${ARCHIVE_NAME}
 mkdir ${DESTNAME}
 
-cp README.md CMakeLists.txt  helloteapot.cpp  moreteapots.cpp   README.md LICENSE ${DESTNAME}
+cp README.md CMakeLists.txt  helloteapot.cpp  moreteapots.cpp .clang-format  README.md LICENSE ${DESTNAME}
 # remove this very script
 rm ${DESTNAME}/$0
 
