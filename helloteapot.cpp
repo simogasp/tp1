@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <cstdlib>
 
 // for mac osx
 #ifdef __APPLE__
