@@ -99,7 +99,7 @@ otherwise you can install the binaries from here (choose Linux x86_64): https://
 Once downloaded, in order to install:
 ```
 chmod +x cmake-X.YY.Z-Linux-x86_64.sh
-sudo cmake-X.YY.Z-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
+sudo ./cmake-X.YY.Z-Linux-x86_64.sh --prefix=/usr/local/ --skip-license
 ```
   
 ### Build
