@@ -33,7 +33,7 @@ void display ()
 }
 
 // Function called everytime a key is pressed
-void key( unsigned char key, int x, int y )
+void key( unsigned char key, int, int)
 {
     switch ( key )
     {
