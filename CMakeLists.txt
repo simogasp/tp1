@@ -30,12 +30,14 @@ set(TP_TARGETS "")
 add_executable(helloteapot helloteapot.cpp)
 list(APPEND TP_TARGETS "helloteapot")
 
+# Uncomment the following lines to build helloteapot2 once you have added the cpp files
 # add_executable(helloteapot2 helloteapot2.cpp)
 # list(APPEND TP_TARGETS "helloteapot2")
 
 add_executable(moreteapots moreteapots.cpp)
 list(APPEND TP_TARGETS "moreteapots")
 
+# Uncomment the following lines to build navigator once you have added the cpp files
 # add_executable(navigator navigator.cpp)
 # list(APPEND TP_TARGETS "navigator")
 
