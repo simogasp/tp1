@@ -64,7 +64,7 @@ jobs:
         # Location of the vcpkg submodule in the Git repository.
         vcpkgDirectory: ${{ env.vcpkgDir }}
         vcpkgGitCommitId: ${{ env.COMMIT_ID }}
-        vcpkgArguments: boost-test freeglut glew glm
+        vcpkgArguments: freeglut glew glm
         vcpkgTriplet: x64-windows
         # doNotCache: true
         # This is used to unbreak cached artifacts if for some reason dependencies fail to build,
