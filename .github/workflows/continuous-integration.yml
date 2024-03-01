@@ -45,8 +45,8 @@ jobs:
     env:
       buildDir: '${{ github.workspace }}\build\'
       vcpkgDir: '${{ github.workspace }}\e\vcpkg'
-      # commit for version 2022.11.14
-      COMMIT_ID: 6f7ffeb18f99796233b958aaaf14ec7bd4fb64b2
+      # commit for version 2023.11.20
+      COMMIT_ID: a42af01b72c28a8e1d7b48107b33e4f286a55ef6
 
     steps:
     - name: Checkout
@@ -87,8 +87,7 @@ jobs:
         cmakeBuildType: ${{ matrix.config }} --config ${{ matrix.config }}
         useVcpkgToolchainFile: true
         buildWithCMake: true
-        buildWithCMakeArgs: -j1
-
+        buildWithCMakeArgs: -j1 --config ${{ matrix.config }}
 
 # glm on homebrew is broken when loading the cmake
   build_macos:
